@@ -1,0 +1,33 @@
+.dotted-border{
+  border : 0;
+  /* transition-timing: ease-in-out; */
+}
+.cont:hover{
+  transform: scale(1.1);
+}
+
+.cont {
+  transition: all 1.3s;
+}
+
+.satelliteImg{
+  position : fixed;
+  bottom: 10%;
+  right : 5%;
+  animation: rotation 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+
+
+
