@@ -30,23 +30,32 @@ const Hero = (props) => {
                             <Col md={8} sm={12}  style={{top : '40%', position: 'absolute'}}>
                                 {/* { props.title && <h1 className="display-1 font-weight-bold text-danger">{props.title}</h1> } */}
                                 { props.title && <h3 className="display-1 font-weight-bold text-danger">
-                                <Typical
-                                    steps={[props.title, 1000, 'Be Ruthless', 1000]}
-                                    loop={Infinity}
-                                /></h3>}
-                                { props.subtitle && <h3 className="display-4 font-weight-light text-white">{props.subtitle}</h3> }
-                                <h4 className="display-5 font-weight-light text-white">Our Services are <Typed
+                                <Typed
                                     strings={[
-                                        "Front End Developer",
-                                        "Back End Developer",
-                                        "Software Engineer"
+                                        "Your story",
+                                        "Your brand",
+                                        "With a dash of panache"
                                     ]}
                                     typeSpeed={80}
                                     backDelay={1100}
                                     backSpeed={30}
                                     loop
                                     />
-                                </h4>    
+                                    </h3>}
+                                { props.subtitle && <h3 className="display-4 font-weight-light text-white">{props.subtitle}
+                                <Typed
+                                    strings={[
+                                        "your raison d’etre",
+                                        "your values",
+                                        "and your style"
+                                    ]}
+                                    typeSpeed={80}
+                                    backDelay={1100}
+                                    backSpeed={30}
+                                    loop
+                                    />
+                                </h3> }
+                                <h4 className="display-5 font-weight-light text-white">Let us tell your story</h4>    
                             </Col>
                         </Row>
                     </Container>

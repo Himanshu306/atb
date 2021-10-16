@@ -1,6 +1,6 @@
 import React from  'react';
 import {Navbar} from 'bootstrap-4-react';
-import Logo from "../../assets/img/logo.png";
+import Logo from "../../assets/img/ATB_WHITE.png";
 
 export class Header extends React.Component{
     render(){

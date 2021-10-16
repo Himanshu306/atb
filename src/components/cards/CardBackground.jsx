@@ -1,7 +1,7 @@
 import React from 'react';
 import {TweenMax, Linear} from 'gsap';
 import 'bootstrap/dist/js/bootstrap';
-import { Facebook, LinkedIn } from '@material-ui/icons';
+import { Facebook, LinkedIn, Instagram } from '@material-ui/icons';
 
 export class CardBackground extends React.Component { 
     componentDidMount() {
@@ -33,8 +33,8 @@ export class CardBackground extends React.Component {
             top: 0
         }}> 
         <svg xmlns="http://www.w3.org/2000/svg" ref={(c) => (this.wrapper = c)} viewBox="0 0 1031.41 441.18" className="containerFluid" style={{background: "#000000"}}>
-        <text x="20%" y="20%" fill="white" fontSize="48">Let's give the life to</text>
-        <text x="20%" y="30%" fill="white" fontSize="48">Thought Process together.</text>
+        <text x="20%" y="20%" fill="white" fontSize="48">Let’s bring your ideas to life,</text>
+        <text x="20%" y="30%" fill="white" fontSize="48">together.</text>
         <text x="21%" y="40%" fill="white" fontSize="18">Mail Us at : <a href="mailto:talktoatb@gmail.com">talktoatb@gmail.com</a></text>
           <g className="house" id="house-seven" ref={(h) => (this.houseSeven = h)} data-project={6} onClick={(e) => this.mouseAction(e)}>
             <g id="bg-fill-2" className="bg-fill">
@@ -157,7 +157,7 @@ export class CardBackground extends React.Component {
           <path id="floor" fill="none" stroke="#333" strokeWidth="2" strokeMiterlimit="10" d="M1 390.76h1050" strokeLinecap="round" />
         </svg>
         <div style={{backgroundColor:"#000", textAlign:"center", padding:"15px", color:"#fff", zIndex:"99", position:"relative", fontSize:"20px"}}>
-        &copy; 2021 All Right Reserved ATB <a href="#"><Facebook style={{color: "#ffff00"}} /></a> <a href="#"><LinkedIn style={{color: "#ffff00"}} /></a>
+        &copy; 2021 All Right Reserved ATB <a href="#"><Instagram style={{color: "#ffff00"}} /></a> <a href="https://www.linkedin.com/company/all-things-branding-atb/"><LinkedIn style={{color: "#ffff00"}} /></a>
         </div>
         </div>
         </>

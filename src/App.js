@@ -10,6 +10,10 @@ import ReactParticles from 'react-particles-js';
 import particlesConfig from './particles-config.js';
 import './assets/scss/newcard.scss';
 import  SatelliteImg  from "./assets/img/satellite4.png";
+import  AirImg  from "./assets/img/air.png";
+import  EarthImg  from "./assets/img/earth.png";
+import  FireImg  from "./assets/img/fire.png";
+import  WaterImg  from "./assets/img/water.png";
 
 function NewCard({ children }) {
   // We add this ref to card element and use in onMouseMove event ...
@@ -138,31 +142,31 @@ function Info() {
 
 const cards = [
   {
-    title: 'Build faster ⚡️',
+    title: 'Website',
     description:
-      'Create a React web app in the fraction of the time using our library of themes and building blocks. We have everything from navbars and content grids to authentication flows and commenting systems. New blocks are added every week.',
-    image: 'https://6jlvz1j5q3.csb.app/undraw_collection.svg',
+      'Landscapes with a touch of you',
+    image: {EarthImg},
     imageRatio: 784 / 1016
   },
   {
-    title: 'Tweak anything 👩‍🎨',
+    title: 'Visual design',
     description:
-      'Built with developers in mind. Change element structure, edit CSS, create components, add props and state. We give you access to the underlying React code so you can do what you need right in our tool.',
-    image: 'https://6jlvz1j5q3.csb.app/undraw_upload.svg',
+      'Creativity that flows',
+    image: {EarthImg},
     imageRatio: 839 / 1133
   },
   {
-    title: 'Export your code 🚀',
+    title: 'Content',
     description:
-      "Export your project as a high-quality React codebase. We're lazer focused on helping you build and iterate quickly, but expect that you'll eventually want to export and wrap things up in your favorite code editor.",
-    image: 'https://6jlvz1j5q3.csb.app/undraw_static_assets.svg',
+      "Copy like a breath of fresh air",
+    image: {EarthImg},
     imageRatio: 730 / 1030
   },
   {
-    title: 'Export your code 🚀',
+    title: 'Marketing',
     description:
-      "Export your project as a high-quality React codebase. We're lazer focused on helping you build and iterate quickly, but expect that you'll eventually want to export and wrap things up in your favorite code editor.",
-    image: 'https://6jlvz1j5q3.csb.app/undraw_static_assets.svg',
+      "Ignite a digital odyssey",
+    image: {EarthImg},
     imageRatio: 730 / 1030
   }
 ];
@@ -176,9 +180,9 @@ export class App extends Component {
     super(props);
     this.state = {
       hero :{
-        title: 'Be Rentless',
-        subtitle: 'Projects makes difference',
-        text: 'Checkout the projects by ATB',
+        title: 'Your element',
+        subtitle: 'Where you come from',
+        text: 'Let us tell your story',
       }
     }
   }
