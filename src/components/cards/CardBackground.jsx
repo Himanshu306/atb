@@ -157,7 +157,7 @@ export class CardBackground extends React.Component {
           <path id="floor" fill="none" stroke="#333" strokeWidth="2" strokeMiterlimit="10" d="M1 390.76h1050" strokeLinecap="round" />
         </svg>
         <div style={{backgroundColor:"#000", textAlign:"center", padding:"15px", color:"#fff", zIndex:"99", position:"relative", fontSize:"20px"}}>
-        &copy; 2021 All Right Reserved ATB <a href="#"><Instagram style={{color: "#ffff00"}} /></a> <a href="https://www.linkedin.com/company/all-things-branding-atb/"><LinkedIn style={{color: "#ffff00"}} /></a>
+        &copy; 2021 All Right Reserved ATB <a href="https://www.instagram.com/allthingsbranding_atb/?utm_source=portfolio&utm_medium=email&utm_campaign=services%20deck" target="_blank"><Instagram style={{color: "#ffff00"}} /></a> <a href="https://www.linkedin.com/company/all-things-branding-atb/" target="_blank"><LinkedIn style={{color: "#ffff00"}} /></a>
         </div>
         </div>
         </>

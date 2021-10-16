@@ -19,6 +19,17 @@
   animation-iteration-count: infinite;
 }
 
+.cards-style{
+  display : block !important;
+}
+
+@media screen and (min-width: 980px){
+  .cards-style{
+    width : 50% !important;
+    flex : auto;
+  }
+}
+
 @keyframes rotation {
   from {
     transform: rotate(0deg);

@@ -134,8 +134,7 @@ function Image({ ratio, src }) {
 function Info() {
   return (
     <div className="info">
-      <h1>Service Cards</h1>
-      <div className="notice">(best viewed at larger screen width)</div>
+      <h1>How do we mould your story?</h1>
     </div>
   );
 }
@@ -145,29 +144,29 @@ const cards = [
     title: 'Website',
     description:
       'Landscapes with a touch of you',
-    image: {EarthImg},
-    imageRatio: 784 / 1016
+    image: [EarthImg],
+    imageRatio: 1
   },
   {
     title: 'Visual design',
     description:
       'Creativity that flows',
-    image: {EarthImg},
-    imageRatio: 839 / 1133
+    image: [WaterImg],
+    imageRatio: 1
   },
   {
     title: 'Content',
     description:
       "Copy like a breath of fresh air",
-    image: {EarthImg},
-    imageRatio: 730 / 1030
+    image: [AirImg],
+    imageRatio: 1
   },
   {
     title: 'Marketing',
     description:
       "Ignite a digital odyssey",
-    image: {EarthImg},
-    imageRatio: 730 / 1030
+    image: [FireImg],
+    imageRatio: 1
   }
 ];
 
@@ -181,7 +180,7 @@ export class App extends Component {
     this.state = {
       hero :{
         title: 'Your element',
-        subtitle: 'Where you come from',
+        subtitle: 'Where you come from ',
         text: 'Let us tell your story',
       }
     }
@@ -199,10 +198,10 @@ export class App extends Component {
                 <Info />
                 <div className="row">
                   {cards.map((card, i) => (
-                    <div className="column">
+                    <div className="column cards-style">
                       <NewCard>
-                        <div className="card-title">{card.title}</div>
-                        <div className="card-body">{card.description}</div>
+                        <div className="card-title text-danger text-center">{card.title}</div>
+                        <div className="card-body text-center">{card.description}</div>
                         <Image ratio={card.imageRatio} src={card.image} />
                       </NewCard>
                     </div>
